@@ -9,6 +9,8 @@
   "author": "AK&AI",
   "license": "ISC",
   "dependencies": {
-    "node-telegram-bot-api": "^0.40.0"
+    "node-telegram-bot-api": "^0.40.0",
+    "telegraf": "^3.36.0",
+    "telegraph-node": "^1.0.4"
   }
 }
