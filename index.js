@@ -1,5 +1,7 @@
 const Telegraf = require('telegraf');
-let token = '1086668214:AAHiw7-Xmi_7fYf9FA0RXEXW1k02_C9mDoQ';
-const bot = new Telegraf(token, {polling:false});
-bot.start((ctx) => ctx.reply('Iam liveeee!'));
+const getConfig= require('/config');
+
+const config = getConfig('conf_');
+const bot = new Telegraf(config.bot_section.bot_token);
+bot.start((ctx) => ctx.reply('Welcome!'));
 bot.launch();
